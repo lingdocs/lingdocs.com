@@ -830,13 +830,10 @@ There's a *very* small handful of verbs where multiple ingredients are irregular
     ]}</TensesChart>
 </VerbDemo>
 
-<RootsAndStems
-    info={getVerbInfo({"i":13801,"ts":1527816865,"p":"وړل","f":"oRúl, wRul, wuRúl","e":"to take, carry, bear, move (inanimate objects); to win, earn (subjunctive یوسي - yósee or ویسي - wéesee, simple past یو یې وړلو - yo ye wRulo)","separationAtP":2,"separationAtF":2,"c":"v. trans. irreg.","ssp":"یوس","ssf":"yos","prp":"یوړل","prf":"yóRul","noOo":true,"diacExcept":true})}
-    textOptions={defaultTextOptions}
-/>
-
-<details>
-    <summary>See conjugations</summary>
+<VerbDemo
+    v={{ p: "وړل", f: "wuRul", e: "to take, carry "}}
+    enry={{"i":13801,"ts":1527816865,"p":"وړل","f":"wuRúl","e":"to take, carry, bear, move (inanimate objects); to win, earn (subjunctive یوسي - yósee or ویسي - wéesee, simple past یو یې وړلو - yo ye wRulo)","separationAtP":2,"separationAtF":2,"c":"v. trans. irreg.","ssp":"یوس","ssf":"yos","prp":"یوړل","prf":"yóRul","noOo":true,"diacExcept":true})}
+>
     <TensesChart formula={verbFormula}>{[
         [
             {
@@ -888,17 +885,12 @@ There's a *very* small handful of verbs where multiple ingredients are irregular
             },
         ],
     ]}</TensesChart>
-</details>
+</VerbDemo>
 
-<RootsAndStems
-    info={getVerbInfo({"i":3524,"ts":1527815348,"p":"تلل","f":"tlul","e":"to go","c":"v. intrans. irreg.","psp":"ځ","psf":"dz","ssp":"لاړ ش","ssf":"laaR sh","prp":"لاړ","prf":"laaR"})}
-    textOptions={defaultTextOptions}
-/>
-
-**NOTE**: The لاړ in the perfective stem will inflect depending on the gender of the subject. For example, I woman will say, <span dir="rtl">"زه لاړه شم?"</span> while a man will say <span dir="rtl">"زه لاړ شم?"</span>. (subjunctive)
-
-<details>
-    <summary>See conjugations</summary>
+<VerbDemo
+    v={{ p: "تلل", f: "tlul", e: "to go" }}
+    entry={{"i":3524,"ts":1527815348,"p":"تلل","f":"tlul","e":"to go","c":"v. intrans. irreg.","psp":"ځ","psf":"dz","ssp":"لاړ ش","ssf":"laaR sh","prp":"لاړ","prf":"laaR"}}
+>
     <TensesChart formula={verbFormula}>{[
         [
             {
@@ -956,7 +948,9 @@ There's a *very* small handful of verbs where multiple ingredients are irregular
             },
         ],
     ]}</TensesChart>
-</details>
+</VerbDemo>
+
+**NOTE**: The لاړ in the perfective stem will inflect depending on the gender of the subject. For example, I woman will say, <span dir="rtl">"زه لاړه شم?"</span> while a man will say <span dir="rtl">"زه لاړ شم?"</span>. (subjunctive)
 
 So far our formula is holding up well. it holds true for all kinds of different verbs. But will it work with compound verbs too? Yes, it will!
 
@@ -964,20 +958,28 @@ So far our formula is holding up well. it holds true for all kinds of different 
 
 For compound verbs there's a very important set of auxillary verbs. These are extremely common in Pashto, and yes, they continue to follow our formula. They are also the only words we see that have irregular past participles.
 
+##### کول - kawul (to make)
+
 <RootsAndStems
     info={getVerbInfo({"i":10247,"ts":1579015359582,"p":"کول","f":"kawul","e":"to make ____ ____ (as in \"He's making me angry.\")","c":"v. trans. irreg. stat. aux.","ssp":"کړ","ssf":"kR","prp":"کړل","prf":"kRul","pprtp":"کړی","pprtf":"kúRey","noOo":true})}
     textOptions={defaultTextOptions}
 />
+
+##### کېدل - kedul (to become)
 
 <RootsAndStems
     info={getVerbInfo({"i":10313,"ts":1581086654898,"p":"کېدل","f":"kedul","e":"to become _____","c":"v. intrans. irreg. aux. stat.","ssp":"ش","ssf":"sh","prp":"شول","prf":"shwul","pprtp":"شوی","pprtf":"shúwey","noOo":true})}
     textOptions={defaultTextOptions}
 />
 
+##### کول - kawul (to do)
+
 <RootsAndStems
     info={getVerbInfo({"i":10246,"ts":1527812752,"p":"کول","f":"kawul","e":"to do (an action or activity)","c":"v. trans. irreg. dyn. aux.","ssp":"وکړ","ssf":"óokR","prp":"وکړل","prf":"óokRul","pprtp":"کړی","pprtf":"kúRey","diacExcept":true})}
     textOptions={defaultTextOptions}
 />
+
+##### کېدل - kedul (to happen)
 
 <RootsAndStems
     info={getVerbInfo({"i":10312,"ts":1527812754,"p":"کېدل","f":"kedul","e":"to happen, occur","c":"v. intrans. irreg. aux. dyn.","ssp":"وش","ssf":"óosh","prp":"وشول","prf":"óoshwul","pprtp":"شوی","pprtf":"shúwey","diacExcept":true})}
