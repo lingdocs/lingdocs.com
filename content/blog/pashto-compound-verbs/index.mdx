@@ -1,0 +1,1622 @@
+---
+title: An Illustrated Guide to Compound Verbs in Pashto
+date: "2020-11-12"
+updated: "2020-11-12"
+description: "We can think of compound verbs in Pashto as two kinds of machines"
+image: "./gears-bg.jpg"
+---
+
+import IW from "../../../src/components/inline-word/InlineWord";
+import Word from "../../../src/components/word/Word";
+import VerbInfo from "../../../src/components/verb-info/VerbInfo";
+import TensesChart from "../../../src/components/tenses-chart/TensesChart";
+import pakhawulDiagram from "./cooking-potatoes.svg";
+import becomingCookedDiagram from "./potatoes-cooking.svg";
+import kaarKawulDiagram from "./doing-work.svg";
+import stativeCompoundTransitive from "./stative-compound-transitive.svg";
+import stativeCompoundIntransitive from "./stative-compound-intransitive.svg";
+import dynamicCompoundTransitive from "./dynamic-compound-transitive.svg";
+import dynamicCompoundInransitive from "./dynamic-compound-intransitive.svg";
+import khufaKawulDiagram from "./making-sad.svg";
+import becomingSadDiagram from "./becoming-sad.svg";
+import makingTiredDiagram from "./making-tired.svg";
+import becomingTiredDiagram from "./becoming-tired.svg";
+import closingDoorDiagram from "./closing-door.svg";
+import doorClosingDiagram from "./door-closing.svg";
+import explainingStoryDiagram from "./explaining-story.svg";
+import storyExplainedDiagram from "./story-explained.svg";
+import storyExplained from "./story-explained.svg";
+import runningDiagram from "./running.svg";
+import stativeIroningDiagram from "./ironing-stative.svg";
+import dynamicIroningDiagram from "./ironing-dynamic.svg";
+import { Link } from "gatsby";
+
+export const SimpleFormula = ({ items }) => {
+    const boxStyle = {
+        padding: "1rem",
+        border: "2px solid black",
+        margin: "1rem 0",
+    }; 
+    const symStyle = {
+        fontSize: "larger",
+        fontWeight: "bold",
+        margin: "0 0.5rem",
+    };
+    return (
+        <div className="formula-boxes">
+            <div style={boxStyle}>{items[0]}</div>
+            <div style={symStyle}>+</div>
+            <div style={boxStyle}>{items[1]}</div>
+            <div style={symStyle}>=</div>
+            <div style={boxStyle}>{items[2]}</div>
+        </div>
+    );
+};
+
+About 70% of verbs in Pashto are compound verbs. Although they're incredibly common, they can also be very confusing for language learners. This article aims to clear up some of the confusion by **explaining compound verbs visually, as two kinds of simple machines**.
+
+## What is a compound verb? 
+
+A compound verb is a verb that's made by combining an auxilary/helper verb and something else (a complement).
+
+<SimpleFormula items={[
+    <div>
+        <div><strong>Complement</strong></div>
+        <div>noun</div>
+        <div>adjective</div>
+        <div>adverb</div>
+    </div>,
+    <div>
+        <strong>helper verb</strong>
+        <div>(auxilary verb)</div>
+    </div>,
+    <strong>compound verb</strong>,
+]}/>
+
+Here are a few of examples:
+
+<SimpleFormula items={[
+   <Word w={{ p: "خفه", f: "khufa", e: "sad" }} />,
+   <Word w={{ p: "کول", f: "kawul", e: "to make", a: "" }} />,
+   <Word w={{ p: "خفه کول", f: "khufa kawul", e: "to upset/make sad" }} />,
+]} />
+
+<SimpleFormula items={[
+   <Word w={{ p: "کار", f: "kaar", e: "work" }} />,
+   <Word w={{ p: "کول", f: "kawul", e: "to do", a: "" }} />,
+   <Word w={{ p: "کار کول", f: "kaar kawul", e: "to work" }} />,
+]} />
+
+<SimpleFormula items={[
+   <Word w={{ p: "پوخ", f: "pokh", e: "cooked" }} />,
+   <Word w={{ p: "کول", f: "kawul", e: "to make", a: "" }} />,
+   <Word w={{ p: "پخول", f: "pakhawul", e: "to cook" }} />,
+]} />
+
+<SimpleFormula items={[
+   <Word w={{ p: "لغته", f: "laghata", e: "kick" }} />,
+   <Word w={{ p: "وهل", f: "wahul", e: "to hit", a: "" }} />,
+   <Word w={{ p: "لغته وهل", f: "laghata wahul", e: "to kick" }} />,
+]} />
+
+## What's confusing about compound verbs?
+
+As soon as someone starts hearing or using these verbs, a number of questions come up.
+
+- Why do some of the verbs get glued together into one word, and some stay as two seperate words?
+- Why do some verbs with <IW w={{ p: "کول", f: "kawul" }} /> take a <IW w={{ p: "و", f: "óo" }} /> prefix and some don't?
+- In the past tense, why does the conjugation on some verbs never change?
+- Why do some verbs take objects, and others only take indirect objects?
+
+It can seem like these are just unexplainable idiosyncracies that have to be memorized for each verb, but that's not the case!
+
+All of these confusing questions melt away once we realize that there are basically **two kinds of compound verbs**.
+
+## The two types of compound verbs
+
+### 1. **Stative Compounds**
+
+  You can think these each of these verbs as **transformer machines**. They *take an object* and do something that transforms it, or puts it in a different state.
+
+<img src={stativeCompoundTransitive} className="img-fluid" alt="transitive stative compound verb diagram" />
+
+For example, the verb <IW w={{ p: "پخول", f: "pakhawul", e: "to cook" }} />:
+
+<img src={pakhawulDiagram} className="img-fluid" alt="pakhawul verb diagram" />
+
+### 2. **Dynamic Compounds**
+
+  Think of these as an **action machines**. They *have a built-in object* which is an action or activity that they do.
+
+<img src={dynamicCompoundTransitive} className="img-fluid" alt="transitive stative compound verb diagram" />
+
+For example, the verb <IW w={{ p: "کار کول", f: "kaar kawul", e: "to work" }} />:
+
+<img src={kaarKawulDiagram} className="img-fluid" alt="kaar kawul verb diagram" />
+
+There are also intransitive versions of these, but we'll get to that later.
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <thead>
+        <tr>
+            <th scope="col">Stative Compound</th>
+            <th scope="col">Dynamic Compound</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td className="small">"Making" Compound</td>
+            <td className="small">"Doing" Compound</td>
+        </tr>
+        <tr>
+            <td className="small">Transformer Machine</td>
+            <td className="small">Action Machine</td>
+        </tr>
+        <tr>
+            <td style={{ verticalAlign: "middle" }}><img src={stativeCompoundTransitive} /></td>
+            <td style={{ verticalAlign: "middle" }}><img src={dynamicCompoundTransitive} /></td>
+        </tr>
+    </tbody>
+</table>
+
+From the diagrams and examples we can see that these two kinds of compounds behave quite differently. The most obvious difference is that:
+
+ - stative compounds take an outside object
+ - dynamic compounds have an object included inside them
+
+We will see more differences when we look at each kind of compound in detail. Once we understand the unique behaviors of each type of machine, all the confusion about different compound verbs behaving differently will disappear.
+
+## How do the two kinds of compounds work?
+
+### 1. Stative compounds
+
+Stative compounds take the complement part of the verb and apply it to an object so that the object is changed or put in a different state.
+
+#### Always use <IW w={{ p: "کول", f: "kawul", e: "to make" }} />
+
+Transitive stative compounds always use use the word <IW w={{ p: "کول", f: "kawul", e: "to make" }} /> to change an object, or put it in a different state. In other words, they take an object and "make it ____".
+
+The <IW w={{ p: "کول", f: "kawul" }} /> verb used by these compounds will <em>never, ever, ever take a <IW w={{ p: "و", f: "óo" }} /> prefix</em>.
+
+<VerbInfo>{{
+    def: "کول - to make [object] ____",
+    subDef: "transitive",
+    presStem: { p: "____ کو", f: "____ kaw" },
+    subjStem: { p: "____ کړ", f: "____ kR" },
+    infinitive: { p: "____ کول", f: "____ kawúl" },
+    perfRoot: { p: "____ کړل", f: "____ kRul" },
+    pastPart: { p: "____ کړی", f: "____ kúRey" },
+}}</VerbInfo>
+
+The complement is often an adjective, as in the following example: <IW w={{ p: "خفه کول", f: "khufa kawúl", e: "to upset" }} />
+
+<img src={khufaKawulDiagram} className="image-fluid" />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه هغه خفه کوم", f: "zu haghá khufa kawúm", e: "I'm making her sad..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه هغه خفه کړم", f: "zu haghá khufa kRum" },
+                    short: { p: "زه هغه خفه کم", f: "zu haghá khufa kum" },
+                    e: "...so I'll make her sad...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به هغه خفه کوم", f: "zu ba haghá khufa kawum", e: "I will make her sad..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به هغه خفه کړم", f: "zu ba haghá khufa kRum" },
+                    short: { p: "زه به هغه خفه کم", f: "zu ba haghá khufa kum" },
+                    e: "I will make her sad...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "هغه خفه کوه!", f: "haghá khufa kawá!", e: "make her sad!" },
+            },
+            {
+                ex: {
+                    long: { p: "هغه خفه کړه!", f: "haghá khufa kRá!" },
+                    short: { p: "هغه خفه که!", f: "haghá khufa ká!" },
+                    e: "make her sad!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "ما هغه خفه کوله", f: "maa haghá khufa kawúla" },
+                    short: { p: "ما هغه خفه کوه", f: "maa haghá kawá" },
+                    e: "I was making / would make her sad",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "ما هغه خفه کړله", f: "maa haghá khufa kRula" },
+                    short: { p: "ما هغه خفه کړه", f: "maa haghá khufa kRa" },
+                    mini: { p: "ما هغه خفه که", f: "maa haghá khufa ka" },
+                    e: "I made her sad",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما هغه خفه کړې ده",
+                    f: "maa haghá khufa kúRe da",
+                    e: "I've made her sad (and now she's upset at me)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+#### If the adjective is inflectable, it will inflect based on the object
+
+Let's take a look at the verb <IW w={{ p: "ستړی کول", f: "stúRey kawúl", e: "to tire", a: "" }} />.
+
+<img src={makingTiredDiagram} className="image-fluid" />
+
+If we're using a feminine object <IW w={{ p: "هغه", f: "haghá", e: "her", a: "" }} />, we need to inflect the complement/adjective <IW w={{ p: "ستړی", f: "stúRe", e: "tired" }} /> to <IW w={{ p: "ستړې", f: "stúRe" }} />.
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه هغه ستړې کوم", f: "zu haghá stúRe kawúm", e: "I'm making her tired..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه هغه ستړې کړم", f: "zu haghá stúRe kRum" },
+                    short: { p: "زه هغه ستړې کم", f: "zu haghá stúRe kum" },
+                    e: "...so I'll make her tired...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به هغه ستړې کوم", f: "zu ba haghá stúRe kawum", e: "I will make her tired..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به ورک کړم", f: "zu ba haghá stúRe kRum" },
+                    short: { p: "زه به ورک کم", f: "zu ba haghá stúRe kum" },
+                    e: "I will make her tired...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "هغه ستړې کوه!", f: "haghá stúRe kawá!", e: "make her tired!" },
+            },
+            {
+                ex: {
+                    long: { p: "هغه ستړې کړه!", f: "haghá stúRe kRá!" },
+                    short: { p: "هغه ستړې که!", f: "haghá stúRe ká!" },
+                    e: "make her tired!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "ما هغه ستړې کوله", f: "maa haghá stúRe kawúla" },
+                    short: { p: "ما هغه ستړې کوه", f: "maa haghá kawá" },
+                    e: "I was making / would make her tired",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "ما هغه ستړې کړله", f: "maa haghá stúRe kRula" },
+                    short: { p: "ما هغه ستړې کړه", f: "maa haghá stúRe kRa" },
+                    mini: { p: "ما هغه ستړې که", f: "maa haghá stúRe ka" },
+                    e: "I made her tired",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما هغه ستړې کړې ده",
+                    f: "maa haghá stúRe kúRe da",
+                    e: "I've made her tired (and now she's tired)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+#### When the complement ends in a consonant, it often fuses together with کول
+
+Let's have a look at the verb <IW w={{ p: "بندول", f: "bandawúl", e: "to close", a: "" }} />.
+
+The adjective/complement <IW w={{ p: "بند", f: "band", e: "closed" }} /> ends in a consonant, so in the <Link to="/blog/pashto-verbs-master-chart#two-aspects-in-pashto-verbs">imperfective aspect</Link>, the <IW w={{ p: "ک", f: "k" }} /> from <IW w={{ p: "کول", f: "kawul" }} /> gets dropped and the two words get fused together.
+
+<img src={closingDoorDiagram} className="image-fluid" />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه دروازې بندوم", f: "zu darwaaze bandawúm", e: "I'm closing the doors..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه دروازې بندې کړم", f: "zu darwaaze bande kRum" },
+                    short: { p: "زه دروازې بندې کم", f: "zu darwaaze bande kum" },
+                    e: "...so I'll close the doors...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به دروازې بندوم", f: "zu ba darwaaze bandawum", e: "I will close the doors..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به بندې کړم", f: "zu ba darwaaze bande kRum" },
+                    short: { p: "زه به بندې کم", f: "zu ba darwaaze bande kum" },
+                    e: "I will close the doors...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "دروازې بندوه!", f: "darwaaze bandawá!", e: "close the doors!" },
+            },
+            {
+                ex: {
+                    long: { p: "دروازې بندې کړه!", f: "darwaaze bande kRa!" },
+                    short: { p: "دروازې بندې که!", f: "darwaaze bande ka!" },
+                    e: "close the doors!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "ما دروازې بندولې", f: "maa darwaaze bandawúle" },
+                    short: { p: "ما دروازې بندوې", f: "maa darwaaze bandawé" },
+                    e: "I was closing the doors",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "ما دروازې بندې کړلې", f: "maa darwaaze bande kRule" },
+                    short: { p: "ما دروازې بندې کړې", f: "maa darwaaze bande kRe" },
+                    mini: { p: "ما دروازې بندې کې", f: "maa darwaaze bande ke" },
+                    e: "I closed the doors",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما دروازې بندې کړې دي",
+                    f: "maa darwaaze bande kúRe dee",
+                    e: "I've closed the doors (and they're shut now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+Notice how when the words are stuck together, it's impossible to inflect the adjective.
+
+In the perfective aspect and in the perfect tense however, the words always break apart and stay seperate. Then the adjective must be inflected according to the object if possible.
+
+#### Some adjectives will get crunched when fusing with کول
+
+Many adjectives get crunched into a shorter version when they fuse together with <IW w={{ p: "کول", f: "kawúl", e: "to make" }} /> in the imperfective forms.
+
+For example if we use the irregular adjective <IW w={{ p: "پوخ", f: "pokh", e: "cooked" }} />, we know that the inflections are:
+
+<table
+    className="table table-bordered"
+    style={{ textAlign: "center" }}
+>
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Masculine</th>
+            <th scope="col">Feminine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Plain</th>
+            <td><Word w={{ p: "پوخ", f: "pokh" }} /></td>
+            <td><Word w={{ p: "پخه", f: "pakha" }} /></td>
+        </tr>
+        <tr>
+            <th scope="row">1st Inf.</th>
+            <td><Word w={{ p: "پاخه", f: "paakhu" }} /></td>
+            <td><Word w={{ p: "پخې", f: "pakhe" }} /></td>
+        </tr>
+        <tr>
+            <th scope="row">2nd Inf.</th>
+            <td><Word w={{ p: "پخو", f: "pakho" }} /></td>
+            <td><Word w={{ p: "پخو", f: "pakho" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+And when we combine this inflectable adjective with the helper verb they get fused togethre like this:
+
+<SimpleFormula items={[
+   <Word w={{ p: "پوخ", f: "pokh", e: "cooked" }} />,
+   <Word w={{ p: "کول", f: "kawul", e: "to make", a: "" }} />,
+   <Word w={{ p: "پخول", f: "pakhawul", e: "to cook" }} />,
+]} />
+
+If we are cooking <IW w={{ p: "الوګان", f: "aloogaan", e: "potatoes" }} />, then <IW w={{ p: "پوخ", f: "pokh" }} /> will inflect to <IW w={{ p: "پاخه", f: "paakhu" }} /> because potatoes are masculine plural.
+
+<img src={pakhawulDiagram} className="img-fluid" alt="pakhawul verb diagram" />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه الوګان پخوم", f: "zu aloogáan pakhawúm", e: "I'm cooking potatoes..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه الوګان پاخه کړم", f: "zu aloogáan paakhu kRum" },
+                    short: { p: "زه الوګان پاخه کم", f: "zu aloogáan paakhu kum" },
+                    e: "...so I'll cook potatoes...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به الوګان پخوم", f: "zu ba aloogáan pakhawum", e: "I will cook potatoes..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به پاخه کړم", f: "zu ba aloogáan paakhu kRum" },
+                    short: { p: "زه به پاخه کم", f: "zu ba aloogáan paakhu kum" },
+                    e: "I will cook potatoes...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "الوګان پخوه!", f: "aloogáan pakhawá!", e: "cook potatoes!" },
+            },
+            {
+                ex: {
+                    long: { p: "الوګان پاخه کړه!", f: "aloogáan paakhu kRa!" },
+                    short: { p: "الوګان پاخه که!", f: "aloogáan paakhu ka!" },
+                    e: "cook potatoes!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "ما الوګان پخول",
+                    f: "maa aloogáan pakhawúl",
+                    e: "I was cooking potatoes",
+                },
+            },
+            {
+                ex: {
+                    p: "ما الوګان پاخه کړل",
+                    f: "maa aloogáan paakhu kRul",
+                    e: "I cooked potatoes",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما الوګان پاخه کړي دي",
+                    f: "maa aloogáan paakhu kúRee dee",
+                    e: "I've cooked potatoes (and they're ready to eat now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+#### The complement can also be an noun or adverb
+
+It seems weird, but the complement in stative compounds *can also be a noun or an adverb*, and when it is it's used sort of like an adjective.
+
+For example the verb "to explain" is a combonation of:
+
+<SimpleFormula items={[
+   <Word w={{ p: "بیان", f: "bayáan", e: "explanation" }} />,
+   <Word w={{ p: "کول", f: "kawul", e: "to make", a: "" }} />,
+   <Word w={{ p: "بیانول", f: "bayaanawúl", e: "to explain/express" }} />,
+]} />
+
+It might seem illogical for us to say, "I made my story explanation," but that's exactly what Pashto does.
+
+<img src={explainingStoryDiagram} className="image-fluid" />
+
+Note that when the complement is not an adjective, it doesn't inflect.
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه خپله کیسه بیانوم", f: "zu khpula keesá bayaanawúm", e: "I'm making story..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه خپله کیسه بیان کړم", f: "zu khpula keesá bayáan kRum" },
+                    short: { p: "زه خپله کیسه بیان کم", f: "zu khpula keesá bayáan kum" },
+                    e: "...so I'll explain my story...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به خپله کیسه بیانوم", f: "zu ba khpula keesá bayaanawúm", e: "I will explain my story..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به خپله کیسه بیان کړم", f: "zu ba khpula keesá bayáan kRum" },
+                    short: { p: "زه به خپله کیسه بیان کم", f: "zu ba khpula keesá bayáan kum" },
+                    e: "I will explain my story...",
+                },
+            },
+        ],
+        [
+            {
+                ex: { p: "خپله کیسه بیانوه!", f: "khpula keesá bayaanawá!", e: "explain your story!" },
+            },
+            {
+                ex: {
+                    long: { p: "خپله کیسه بیان کړه!", f: "khpula keesá bayáan kRá!" },
+                    short: { p: "خپله کیسه بیان که!", f: "khpula keesá bayáan ká!" },
+                    e: "explain your story!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "ما خپله کیسه بیانوله", f: "maa khpula keesá bayaanawúla" },
+                    short: { p: "ما خپله کیسه بیانوه", f: "maa khpula keesá bayaanawá" },
+                    e: "I was explaining my story",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "ما خپله کیسه بیان کړله", f: "maa khpula keesá bayáan kRula" },
+                    short: { p: "ما خپله کیسه بیان کړه", f: "maa khpula keesá bayáan kRa" },
+                    mini: { p: "ما خپله کیسه بیان که", f: "maa khpula keesá bayáan ka" },
+                    e: "I explained my story",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما خپله کیسه بیان کړې ده",
+                    f: "maa khpula keesá bayáan kúRe da",
+                    e: "I've explained my story",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+#### Reviewing stative compounds
+
+So far we've learned the inner workings of one type of machine: the "transformer machine" aka stative compound.
+
+<img src={stativeCompoundTransitive} className="img-fluid" alt="transitive stative compound verb diagram" />
+
+To review all the behaviours of the stative compounds, we know that they:
+
+- Always use <IW w={{ p: "کول", f: "kawul", e: "to make" }} /> as the helper/auxilary verb
+- The complement can be an adjective, noun, or adverb
+- If the complement is an adjective, it will inflect according to the object
+- Infinitive/imperfective forms (almost always) fuse together when the complement ends in a consonant
+
+### 2. Dynamic compounds
+
+Dynamic compounds are actually a lot easier. These "action machines" are much simpler, because they have *less moving parts*.
+
+<img src={dynamicCompoundTransitive} className="img-fluid" alt="transitive dynamic compound verb diagram" />
+
+#### The object is included in the compound
+
+The most important thing to know about these verbs is that **they don't take any outside object**. **The object of the sentence is already included in the compound**. The object will always be a noun, which will be some sort of action or activity to be done.
+
+For instance, if you have a sentence or a clause with the verb <IW w={{ p: "کار کول", f: "kaar kawúl", e: "to work" }} /> then <IW w={{ p: "کار", f: "kaar", e: "work" }} /> will *always* be the object, and the *only* object. This makes things simpler especially when it comes to past tense.
+
+#### They use <IW w={{ p: "کول", f: "kawul", e: "to do" }} />
+
+While stative componuds used <IW w={{ p: "کول", f: "kawul", e: "to make" }} />, dynamic compounds use <IW w={{ p: "کول", f: "kawul", e: "to do" }} />. These may look like the same verb, but they're not! They mean different things, behave differently, and in the perfective forms they diverge.
+
+<table
+    className="table table-bordered"
+    style={{ tableLayout: "fixed", textAlign: "center" }}
+>
+    <thead>
+        <tr>
+            <th scope="col">
+                <div>Stative compounds</div>
+                <div className="small">"transformer machines"</div>
+            </th>
+            <th scope="col">
+                <div>Dynamic compounds</div>
+                <div className="small">"action machines"</div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src={stativeCompoundTransitive} className="img-fluid" /></td>
+            <td><img src={dynamicCompoundTransitive} className="img-fluid" /></td>
+        </tr>
+        <tr>
+            <td>
+                <div>use only</div>
+                <Word w={{ p: "کول", f: "kawúl", e: "to make ____ ____" }} />
+            </td>
+            <td>
+                <div>use</div>
+                <Word w={{ p: "کول", f: "kawúl", e: "to do ____" }} />
+                <div>and other verbs too</div>
+            </td>
+        </tr>
+        <tr>
+            <td><IW w={{ p: "کول", f: "kawúl", e: "to make" }} /> <strong>never</strong> takes a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /></td>
+            <td><IW w={{ p: "کول", f: "kawúl", e: "to do" }} /> <strong>always</strong> takes a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+Unlike <IW w={{ p: "کول", f: "kawúl", e: "to make" }} />, <IW w={{ p: "کول", f: "kawúl", e: "to do" }} /> does take a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /> in the perfective forms.
+
+<VerbInfo>{{
+    def: "کول - to do [object]",
+    subDef: "transitive",
+    presStem: { p: "کو", f: "kaw" },
+    subjStem: { p: "وکړ", f: "óokR" },
+    infinitive: { p: "کول", f: "kawúl" },
+    perfRoot: { p: "وکړل", f: "óokRul" },
+    pastPart: { p: "کړی", f: "kúRey" },
+}}</VerbInfo>
+
+Let's look at the verb <IW w={{ p: "کار کول", f: "kaar kawul", e: "to work" }} />:
+
+<img src={kaarKawulDiagram} className="img-fluid" alt="kaar kawul verb diagram" />
+
+<details>
+    <summary>See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه کار کوم", f: "zu kaar kawúm", e: "I'm working..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه کار وکړم", f: "zu kaar óokRum" },
+                    short: { p: "زه کار وکم", f: "zu kaar óokum" },
+                    e: "...so I'll work..." },
+            },
+        ],
+        [
+            {
+                ex: { p: "زه به کار کوم", f: "zu ba kaar kawúm", e: "I will work..." },
+            },
+            {
+                ex: {
+                    long: { p: "زه به کار وکړم", f: "zu ba kaar óokRum" },
+                    short: { p: "زه به کار وکم", f: "zu ba kaar óokum" },
+                    e: "...I will work..." },
+            },
+        ],
+        [
+            {
+                ex: { p: "کار کوه!", f: "kaar kawá!", e: "work!" },
+            },
+            {
+                ex: {
+                    long: { p: "کار وکړه!", f: "kaar óokRa!" },
+                    short: { p: "کار وکه!", f: "kaar óoka!" },
+                    e: "work!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "ما کار کوله", f: "maa kaar kawúlo" },
+                    short: { p: "ما کار کاوه", f: "maa kaar kaawú" },
+                    e: "I was working",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "ما کار وکړلو", f: "maa kaar óokRulo" },
+                    short: { p: "ما کار وکړو", f: "maa kaar óokRo" },
+                    mini: { p: "ما کار وکړ", f: "maa kaar óokuR" },
+                    e: "I worked",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما کار کړی دی",
+                    f: "maa kaar kúRey dey",
+                    e: "I have worked",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+#### The words always stay seperate
+
+With dynamic componuds, the complement and verb *never ever* get fused together. For example <IW w={{ p: "کار کول", f: "kaar kawul" }} /> can never get squished together to become <IW w={{ p: "کارول", f: "kaarawul" }} />. In fact, <IW w={{ p: "کارول", f: "kaarawul", e: "to use" }} /> is actually a completely different non-componud verb.
+
+#### There can't be any other objects!
+
+It's important to remember that with dynamic compounds the object is *inside the compound*, so you can't have a direct object anywhere else in the sentence or clause. But "indirect objects" are often exrpessed through words connected with prepositional phrases (sandwiches).
+
+For example, in English we might say "I am serving my father." Father is the direct object. But in Pashto we can say:
+
+<Word w={{
+    p: "زه د پلار خدمت کوم",
+    f: "zu du plaar khidmat kawum",
+    e: "I am doing my father's service",
+    a: "",
+}} />
+
+Here <IW w={{ p: "خدمت", f: "khidmat", e: "service" }} /> is the direct object and <IW w={{ p: "پلار", f: "plaar", e: "father" }} /> is like an indirect object, related to the verb through a prepositional phrase <IW w={{ p: "د ...", f: "du ..." }} />.
+
+#### Other verbs can be used
+
+With dynamic compounds other verbs like <IW w={{ p: "وهل", f: "wahul", e: "to hit" }} /> or <IW w={{ p: "خوړل", f: "khoRúl", e: "to eat" }} /> can also be used as the verb in the "action machine".
+
+For example, the verb <IW w={{ p: "منډې وهل", f: "múnDe wahúl", e: "to run", a: "" }} />:
+
+<img src={runningDiagram} className="image-fluid" />
+
+The object / complement in this verb is <IW w={{ p: "منډې", f: "múnDe", e: "runs" }} />, which is feminine plural. So, in the past tense the verb will *always* be conjugated 3rd person feminine plural.
+
+<details>
+    <summary>See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "زه منډې وهم", f: "zu múnDe wahúm", e: "I'm running..." },
+            },
+            {
+                ex: {
+                    p: "زه منډې ووهم",
+                    f: "zu múnDe óowahum",
+                    e: "...so I'll run...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "زه به منډې وهم",
+                    f: "zu ba múnDe wahúm",
+                    e: "I will run...",
+                },
+            },
+            {
+                ex: {
+                    p: "زه به منډې ووهم",
+                    f: "zu ba múnDe óowahum",
+                    e: "...I will run...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "منډې وهه!",
+                    f: "múnDe wahá!",
+                    e: "run! (repeatedly, in general)",
+                },
+            },
+            {
+                ex: {
+                    p: "منډې ووهه!",
+                    f: "múnDe óowaha!",
+                    e: "run! (one time)",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: {
+                        p: "ما منډې وهلې",
+                        f: "maa múnDe wahúle",
+                    },
+                    short: {
+                        p: "ما منډې وهې",
+                        f: "maa múnDe wahé",
+                    },
+                    e: "I was running",
+                },
+            },
+            {
+                ex: {
+                    long: {
+                        p: "ما منډې ووهلې",
+                        f: "maa múnDe óowahule",
+                    },
+                    short: {
+                        p: "ما منډې ووهې",
+                        f: "maa múnDe óowahe",
+                    },
+                    e: "I ran",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "ما منډې وهلې دي",
+                    f: "maa múnDe wahúle dee",
+                    e: "I have run",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+### Reviewing stative and dynamic compounds
+
+Remember all those weird different behaviours that we mentioned at the beginning? Once we realize there are these two different types of compound verbs, represented by two different kinds of "machines," we can see that each of the two has a distinct set of behaviours.
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <thead>
+        <tr>
+            <th scope="col">Stative Compound</th>
+            <th scope="col">Dynamic Compound</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Transformer Machine</td>
+            <td>Action Machine</td>
+        </tr>
+        <tr>
+            <td style={{ verticalAlign: "middle" }}><img src={stativeCompoundTransitive} /></td>
+            <td style={{ verticalAlign: "middle" }}><img src={dynamicCompoundTransitive} /></td>
+        </tr>
+        <tr>
+            <td>Takes an outside object</td>
+            <td>Includes the object in the compound</td>
+        </tr>
+        <tr>
+            <td>Uses <IW w={{ p: "کول", e: "to make" }} />, which never takes a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /></td>
+            <td>Uses <IW w={{ p: "کول", e: "to do" }} />, which does take a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />, or other helper verbs</td>
+        </tr>
+        <tr>
+            <td>The complement can be an adjective, noun, or adverb</td>
+            <td>The complement can only be a noun</td>
+        </tr>
+        <tr>
+            <td>The complement gets applied to the object</td>
+            <td>The complement is the object</td>
+        </tr>
+        <tr>
+            <td>Does something that changes the object</td>
+            <td>Does an action or activity, which is the object</td>
+        </tr>
+        <tr>
+            <td>Often joins the two words together if the complement ends in a consonant</td>
+            <td>The two words never get joined together</td>
+        </tr>
+        <tr>
+            <td>If the complement is an adjective, it inflects according to the object</td>
+            <td>The complement is the object, so it doesn't inflect</td>
+        </tr>
+    </tbody>
+</table>
+
+### Some verbs can be both!
+
+Some verbs can be used either as stative or dynamic compounds. For example, with <IW w={{ p: "استري کول", f: "istree kawul", e: "to iron", a: "" }} />, you could either use it as:
+
+- a stative componud
+    - as in "to iron ____" (to make something ironed)
+- a dynamic compound
+    - as in "to do ironing" (to do the activity of ironing)
+
+**Ironing with the stative version**
+
+If we say we are ironing a **shirt** (object):
+
+<img src={stativeIroningDiagram} />
+
+<Word w={{
+    p: <>ما <strong>قمیس</strong> استري کړو</>,
+    f: <>maa <strong>qamees</strong> istree kRo</>,
+    e: <>I ironed a <strong>shirt</strong></>,
+}} />
+
+In these sentences <IW w={{ p: "قمیس", f: "qamees", e: "shirt" }} /> is the object, so in the past tense the verb agrees with it (3rd person masc. singular). Also notice that the <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /> is not used.
+
+**Ironing with the dynamic version**
+
+If we just wanted to say that we did **ironing** (object):
+
+<img src={dynamicIroningDiagram} />
+
+<Word w={{
+    p: <>ما <strong>استري</strong> وکړه</>,
+    f: <>maa <strong>istree</strong> óokRa</>,
+    e: <>I did <strong>ironing</strong></>,
+}} />
+
+In these sentences <IW w={{ p: "استري", f: "istree", e: "ironing" }} /> is the object, so in the past tense the verb agrees with it (3rd person fem. singular).
+
+Also notice that the <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /> <em>is</em> used. It would be wrong to wrong to say <IW w={{ p: "ما استري کړه", f: "maa istree kRa", e: "I did ironing" }} /> ❌.
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <thead>
+        <tr>
+            <th scope="col" style={{ verticalAlign: "middle" }}>
+                <div>Stative Version</div>
+                <div className="small">Verb agrees with the object getting ironed</div>
+                <div className="small">Verb doesn't take <IW w={{ p: "و", f: "óo" }} /></div>
+            </th>
+            <th scope="col" style={{ verticalAlign: "middle" }}>
+                <div>Dynamic Version</div>
+                <div className="small">Verb agrees with the action (ironing)</div>
+                <div className="small">Verb takes <IW w={{ p: "و", f: "óo" }} /></div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><Word w={{ p: "ما برکه استري کړه ✔", f: "maa bUrqa istree kRa ✔", e: "I ironed a burka", a: "" }} /></td>
+            <td><Word w={{ p: "ما استري وکړه ✔", f: "maa istree óokRa ✔", e: "I did ironing" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "ما برکه استري کړه ❌", f: "maa bUrqa istree óokRa ❌", e: "I ironed a burka", a: "" }} /></td>
+            <td><Word w={{ p: "ما استري وکړه ❌", f: "maa istree kRa ❌", e: "I did ironing" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "ما قمیص استري کړو ✔", f: "maa qamées istree kRo ✔", e: "I ironed a shirt", a: "" }} /></td>
+            <td><Word w={{ p: "ما استري وکړه ✔", f: "maa istree óokRa ✔", e: "I did ironing" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "ما قمیص استري کړه ❌", f: "maa qamées istree kRa ❌", e: "I ironed a shirt", a: "" }} /></td>
+            <td><Word w={{ p: "ما استري وکړو ❌", f: "maa istree óokRo ❌", e: "I did ironing" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+<p><IW w={{ p: "قتل کول", f: "qátil kawul" }} /> is another example of a verb that can be used either statively or dynamically. (with or without an outside object)</p>
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <thead>
+        <tr>
+            <th scope="col">Stative Version</th>
+            <th scope="col">Dynamic Version</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>"To kill ____"</td>
+            <td>"To commit a murder"</td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "هغهٔ لس کسان قتل کړل ✔", f: "haghú las kasaan qatil kRul ✔", e: "He killed 10 people", a: "" }} /></td>
+            <td><Word w={{ p: "هغهٔ قتل وکړو ✔", f: "haghú qatil óokRo ✔", e: "He committed a murder" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "هغهٔ یوه ښځه قتل کړه ✔", f: "haghú yuwa xudza qatil kRa ✔", e: "He killed a woman", a: "" }} /></td>
+            <td><Word w={{ p: "هغهٔ قتل وکړه ❌", f: "haghú qatil óokRa ❌", e: "He committed a murder" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+### A few weird exceptions
+
+There are a few verbs like:
+
+- <IW w={{ p: "چيغه کول", f: "cheegha kawul", e: "to scream", a: "" }} />
+- <IW w={{ p: "منډه کول", f: "múnDa kawul", e: "to run", a: "" }} />
+- <IW w={{ p: "نارې کول", f: "naare kawul", e: "to cry out" }} />
+- <IW w={{ p: "غږ کول", f: "ghuG kawul", e: "to call out", a: "" }} />
+
+That can either be used as dynamic compounds or as stative compounds as if there was an implied complement. 
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <thead>
+        <tr>
+            <th scope="col">Correct ✔</th>
+            <th scope="col">Also correct ✔</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><Word w={{ p: "ما چیغه کړه", f: "maa chéegha kRa", e: "I yelled", a: "" }} /></td>
+            <td><Word w={{ p: "ما چیغه وکړه", f: "maa chéegha óokRa", e: "I yelled", a: "" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "ما نارې کړې", f: "maa naaré kRe", e: "I cried out", a: "" }} /></td>
+            <td><Word w={{ p: "ما چیغه وکړې", f: "maa naaré óokRe", e: "I cried out", a: "" }} /></td>
+        </tr>
+        <tr>
+            <td><Word w={{ p: "ما عږ کړو", f: "maa ghuG kRo", e: "I called out", a: "" }} /></td>
+            <td><Word w={{ p: "ما غږ وکړو", f: "maa ghuG óokRo", e: "I called out", a: "" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+To think of it differently, they can basically function as dynamic compounds with or without the <IW w={{ p: "و", f: "óo" }} /> prefix. Well, it was *almost* all perfectly logical, sorry. Language can get weird. 🤷‍♂️
+
+<p style={{ color: "red" }}>EDIT: Actually, I think I figured out what's happening here and it's very logical! 🤓 Will write more here soon!</p>
+
+## Intransitive versions 
+
+So far we've only talked about the tranisitive version of these two types of compounds/machines. 
+
+There is also an *intransitive version* of these machines, for when you are just talking about:
+
+ - something being transformed/changed (stative)  
+ - some action happening (dynamic) 
+
+...but are not mentioning the person or thing that's *doing* the action.
+
+### Instransitive stative componuds
+
+<img src={stativeCompoundIntransitive} />
+
+These follow all the same rules and behaviours as the transitive versions, except that there's only a subject, and no object.
+
+These verbs use the intranisite equivalent to <IW w={{ p: "کول", f: "kawúl", e: "to make" }} /> which is <IW w={{ p: "کېدل", f: "kedúl", e: "to become" }} />.
+
+<VerbInfo>{{
+    def: "کېدل - to become ____",
+    subDef: "intransitive",
+    presStem: { p: "کېږ", f: "keG" },
+    subjStem: { p: "ش", f: "sh" },
+    infinitive: { p: "کېدل", f: "kedúl" },
+    perfRoot: { p: "شول", f: "shwul" },
+    pastPart: { p: "شوی", f: "shúwey" },
+}}</VerbInfo>
+
+Notice how with this verb, just as with <IW w={{ p: "کول", f: "kawúl", e: "to make" }} />, there is no <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />.
+
+All these compounds will have the same characteristics as the tranisitive "transformer machines" that we saw earlier. The only difference is that there's no subject pressing the button and doing the action of transforming. There's just a subject that goes through and is changed.
+
+<img src={becomingSadDiagram} />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { p: "هغه خفه کېږي", f: "haghá khufa kéGee", e: "She's getting sad..." },
+            },
+            {
+                ex: {
+                    p: "هغه خفه شي",
+                    f: "haghá khufa shee",
+                    e: "...so she'll get sad...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "هغه به خفه کېږي",
+                    f: "haghá ba khufa kéGee",
+                    e: "She'll become sad...",
+                },
+            },
+            {
+                ex: {
+                    p: "هغه به خفه شي",
+                    f: "haghá ba khufa shee",
+                    e: "She'll become sad...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "خفه کېږه!",
+                    f: "khufa kéGa!",
+                    e: "become sad!",
+                },
+            },
+            {
+                ex: {
+                    p: "خفه شه!",
+                    f: "khufa sha!",
+                    e: "become sad!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "هغه خفه کېدله", f: "haghá khufa kedúla" },
+                    short: { p: "هغه خفه کېده", f: "haghá khufa kedá" },
+                    e: "She was becoming sad",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "هغه خفه شوله", f: "haghá khufa shwula" },
+                    short: { p: "هغه خفه شوه", f: "haghá khufa shwa" },
+                    e: "I made her sad",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "هغه خفه شوې ده",
+                    f: "haghá khufa shúwe da",
+                    e: "She's become upset",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+For these intransitive transformer machines all the other behaviours apply:
+
+- There's no <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /> used
+- If the complement is an adjective it will inflect (for the subject now)
+- Complements ending in a consonant will get joined together with the verb
+- Adjectives, nouns, and adverbs can be used as complements
+
+Here are the intransitive versions of all the other examples above:
+
+<img src={becomingTiredDiagram} />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { 
+                    p: "هغه ستړې کېږي",
+                    f: "haghá stúRe kéGee",
+                    e: "She's getting tired...",
+                },
+            },
+            {
+                ex: {
+                    p: "هغه ستړې شي",
+                    f: "haghá stúRe shee",
+                    e: "...so she'll get tired...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "هغه به ستړې کېږي",
+                    f: "haghá ba stúRe kéGee",
+                    e: "She'll become tired...",
+                },
+            },
+            {
+                ex: {
+                    p: "هغه به ستړې شي",
+                    f: "haghá ba stúRe shee",
+                    e: "She'll become tired...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "ستړې کېږه!",
+                    f: "stúRe kéGa!",
+                    e: "become tired!",
+                },
+            },
+            {
+                ex: {
+                    p: "ستړې شه!",
+                    f: "stúRe sha!",
+                    e: "become tired!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "هغه ستړې کېدله", f: "haghá stúRe kedúla" },
+                    short: { p: "هغه ستړې کېده", f: "haghá stúRe kedá" },
+                    e: "She was becoming tired",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "هغه ستړې شوله", f: "haghá stúRe shwula" },
+                    short: { p: "هغه ستړې شوه", f: "haghá stúRe shwa" },
+                    e: "I made her tired",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "هغه ستړې شوې ده",
+                    f: "haghá stúRe shúwe da",
+                    e: "She's become tired",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+<img src={doorClosingDiagram} />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { 
+                    p: "دروازې بندېږي",
+                    f: "darwaaze bandéGee",
+                    e: "The doors are closing",
+                },
+            },
+            {
+                ex: {
+                    p: "دروازې بندې شي",
+                    f: "darwaaze bande shee",
+                    e: "...so the doors'll close...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "دروازې به بندېږي",
+                    f: "darwaaze ba bandéGee",
+                    e: "The doors will close",
+                },
+            },
+            {
+                ex: {
+                    p: "دروازې به بندې شي",
+                    f: "darwaaze ba bande shee",
+                    e: "The doors will close",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "بندېږئ!",
+                    f: "bandeGeyy!",
+                    e: "close!",
+                },
+            },
+            {
+                ex: {
+                    p: "بندې شئ!",
+                    f: "bande sheyy!",
+                    e: "close!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "دروازې بندېدلې", f: "darwaaze bandedúle" },
+                    short: { p: "دروازې بندېدې", f: "darwaaze bandedé" },
+                    e: "The doors were closing",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "دروازې بندې شولې", f: "darwaaze bande shwule" },
+                    short: { p: "دروازې بندې شوې", f: "darwaaze bande shwe" },
+                    e: "I closed the doors",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "دروازې بندې شوې دي",
+                    f: "darwaaze bande shúwe dee",
+                    e: "The doors have closed (and they're shut now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+<img src={becomingCookedDiagram} />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { 
+                    p: "الوګان پخېږي",
+                    f: "aloogáan pakhéGee",
+                    e: "The potatoes are cooking",
+                },
+            },
+            {
+                ex: {
+                    p: "الوګان پاخه شي",
+                    f: "aloogáan paakhu shee",
+                    e: "...so the potatoes'll cook...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "الوګان به پخېږي",
+                    f: "aloogáan ba pakhéGee",
+                    e: "The potatoes will cook",
+                },
+            },
+            {
+                ex: {
+                    p: "الوګان به پاخه شي",
+                    f: "aloogáan ba paakhu shee",
+                    e: "The potatoes will cook",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "پخېږئ!",
+                    f: "pakhéGeyy!",
+                    e: "cook!",
+                },
+            },
+            {
+                ex: {
+                    p: "پاخه شئ!",
+                    f: "paakhu sheyy!",
+                    e: "cook!",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "الوګان پخېدل",
+                    f: "aloogáan pakhedúl",
+                    e: "The potatoes were cooking",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "الوګان پاخه شول", f: "aloogáan paakhu shwul" },
+                    short: { p: "الوګان پاخه شوو", f: "aloogáan paakhu shoo" },
+                    e: "the potatoes cooked",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "الوګان پاخه شوي دي",
+                    f: "aloogáan paakhu shúwee dee",
+                    e: "The potatoes have cooked (and they're ready to eat now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+<img src={storyExplainedDiagram} />
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart>{[
+        [
+            {
+                ex: { 
+                    p: "کیسه بیانېږي",
+                    f: "keesa bayaanéGee",
+                    e: "the story is being explained",
+                },
+            },
+            {
+                ex: {
+                    p: "کیسه بیان شي",
+                    f: "keesa bayaan shee",
+                    e: "...so the will be explained...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "کیسه به بیانېږي",
+                    f: "keesá ba bayaanGee",
+                    e: "the story will be explained",
+                },
+            },
+            {
+                ex: {
+                    p: "کیسه به بیان شي",
+                    f: "keesá ba bayaan shee",
+                    e: "the story will be explained",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "بیانېږه!",
+                    f: "bayaaneGa!",
+                    e: "be explained! (unnatural example)",
+                },
+            },
+            {
+                ex: {
+                    p: "بیان شه!",
+                    f: "bayaan sha!",
+                    e: "be explained! (unnatural example)",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "کیسه بیانېدله", f: "keesa bayaanedúla" },
+                    short: { p: "کیسه بیانېده", f: "keesa bayaanedá" },
+                    e: "the story was getting explained",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "کیسه بیان شوله", f: "keesa bayaan shwula" },
+                    short: { p: "کیسه بیان شوه", f: "keesa bayaan shwa" },
+                    e: "the story got explained",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "کیسه بیان شوې ده",
+                    f: "keesa bayaan shúwe da",
+                    e: "the story has been explained (and it's known now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
+
+**NOTE:** These are not "passive forms" of verbs. That's whole other form that we won't deal with in this article.
+
+<table className="table table-bordered" style={{ tableLayout: "fixed", textAlign: "center" }}>
+    <tbody>
+        <tr>
+            <td>Transitive</td>
+            <td><Word w={{ p: "الوګان پخوم", f: "aloogáan pakhawum", e: "I am cooking potatoes", a: "" }} /></td>
+        </tr>
+        <tr>
+            <td>Intransitive</td>
+            <td><Word w={{ p: "الوګان پخېږي", f: "aloogáan pakhéGee", e: "Potatoes are cooking", a: "" }} /></td>
+        </tr>
+        <tr>
+            <td>Passive form (from transitive)</td>
+            <td><Word w={{ p: "الوګان پخول کېږي", f: "aloogáan pakhawul kéGee", e: "Potatoes are being cooked", a: "" }} /></td>
+        </tr>
+    </tbody>
+</table>
+
+### Intranisitive dynamic compounds
+
+If a dynamic compound is made with <IW w={{ p: "کول", f: "kawul", e: "to do" }} /> then you can also make an intransitive version of it with <IW w={{ p: "کېدل", f: "kedúl", e: "to happen", a: "" }} />. This way you will be talking about an action happening, without mentioning who was doing it.
+
+<img src={dynamicCompoundInransitive} />
+
+The verb used is <IW w={{ p: "کېدل", f: "kedúl", e: "to happen", a: "" }} />, which is the intransitive equivalent of <IW w={{ p: "کول", f: "kawul", e: "to do" }} />. It *does* ake a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />
+
+<VerbInfo>{{
+    def: "کېدل - to happen",
+    subDef: "intransitive",
+    presStem: { p: "کېږ", f: "keG" },
+    subjStem: { p: "وش", f: "óosh" },
+    infinitive: { p: "کېدل", f: "kedúl" },
+    perfRoot: { p: "وشول", f: "óoshwul" },
+    pastPart: { p: "شوی", f: "shúwey" },
+}}</VerbInfo>
+
+<details>
+    <summary className="large-summary">See conjugations</summary>
+    <TensesChart
+        custom={[
+            ["Present", "Subjunctive"],
+            ["Imperf. Future", "Perf. Future"],
+            ["Continuous Past", "Simple Past"],
+            ["Present Perfect"],
+        ]}
+    >{[
+        [
+            {
+                ex: {
+                    p: "کار کېږي",
+                    f: "kaar kéGee",
+                    e: "work is happening",
+                },
+            },
+            {
+                ex: {
+                    p: "کار وشي",
+                    f: "kaar óoshee",
+                    e: "...so work will happen...",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    p: "کار به کېږي",
+                    f: "kaar ba kéGee",
+                    e: "Work will happen",
+                },
+            },
+            {
+                ex: {
+                    p: "کار به وشي",
+                    f: "kaar ba óoshee",
+                    e: "Work will happen",
+                },
+            },
+        ],
+        [
+            {
+                ex: {
+                    long: { p: "کار کېدلو", f: "kaar kedúlo" },
+                    short: { p: "کار کېدو", f: "kaar kedo" },
+                    e: "Work was happening",
+                },
+            },
+            {
+                ex: {
+                    long: { p: "کار وشولو", f: "kaar óoshwulo" },
+                    short: { p: "کار وشو", f: "kaar óosho" },
+                    e: "Work happened",
+                },
+            },
+        ],
+        [
+            {
+                ex: { 
+                    p: "کار شوی دی",
+                    f: "khufa shúwey dey",
+                    e: "Work has happened (it's accomplished now)",
+                },
+            },
+        ],
+    ]}</TensesChart>
+</details>
