@@ -31,11 +31,6 @@ const BlogIndex = ({ data, location }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-md-10 mx-auto">
-            <div className="text-center">
-              <Link to="/projects">
-                <button className="clean-blog-btn btn-outline-secondary mb-4">Projects</button>
-              </Link>
-            </div>
             <h4 className="mt-4">Blog Posts</h4>
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.slug;
