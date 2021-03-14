@@ -73,6 +73,7 @@ module.exports = {
               icon: `<i class="fas fa-link mr-1"></i>`,
             },
           },
+          `gatsby-plugin-postcss`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,

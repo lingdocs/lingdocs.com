@@ -5,11 +5,6 @@ import aboutBackground from "../assets/images/about-bg.jpg";
 
 const projects = [
     {
-      title: "Pashto Dictionary",
-      description: "A dictionary of the Pashto language with smart-search and inflection/conjugation",
-      link: "https://dictionary.lingdocs.com",
-    },
-    {
         title: "Pashto Verb Explorer",
         description: "An interactive playground for exploring and learning about how Pashto verbs are conjugated. This is based on a verb conjugation engine that runs in the browser.",
         link: "https://verbs.lingdocs.com",
