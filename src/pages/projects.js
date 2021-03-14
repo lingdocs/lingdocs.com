@@ -14,11 +14,11 @@ const projects = [
         description: "A Pashto grammar reference. This is extremely new and only in the very beginning stages.",
         link: "https://grammar.lingdocs.com",
     },
-    {
-        title: "Pashto Dictionary",
-        description: "A Pashto dicitionary with smart-search and inflection/conjugation",
-        link: "https://dictionary.lingdocs.com",
-    },
+    // {
+    //     title: "Pashto Dictionary",
+    //     description: "A Pashto dicitionary with smart-search and inflection/conjugation",
+    //     link: "https://dictionary.lingdocs.com",
+    // },
 ];
 
 const About = ({ location }) => {
