@@ -8,7 +8,6 @@ image: "./gears-bg.jpg"
 
 import IW from "../../../src/components/inline-word/InlineWord";
 import Word from "../../../src/components/word/Word";
-import VerbInfo from "../../../src/components/verb-info/VerbInfo";
 import TensesChart from "../../../src/components/tenses-chart/TensesChart";
 import pakhawulDiagram from "./cooking-potatoes.svg";
 import becomingCookedDiagram from "./potatoes-cooking.svg";
@@ -30,6 +29,10 @@ import runningDiagram from "./running.svg";
 import stativeIroningDiagram from "./ironing-stative.svg";
 import dynamicIroningDiagram from "./ironing-dynamic.svg";
 import { Link } from "gatsby";
+import {
+    getVerbInfo,
+    RootsAndStems,
+} from "@lingdocs/pashto-inflector";
 
 export const SimpleFormula = ({ items }) => {
     const boxStyle = {
@@ -57,7 +60,7 @@ About 70% of verbs in Pashto are compound verbs. Although they're incredibly com
 
 ## What is a compound verb? 
 
-A compound verb is a verb that's made by combining an auxilary/helper verb and something else (a complement).
+A compound verb is a verb that's made by combining a verb and something else (a complement).
 
 <SimpleFormula items={[
     <div>
@@ -66,11 +69,10 @@ A compound verb is a verb that's made by combining an auxilary/helper verb and s
         <div>adjective</div>
         <div>adverb</div>
     </div>,
-    <div>
-        <strong>helper verb</strong>
-        <div>(auxilary verb)</div>
+    <div className="p-3">
+        <strong>Verb</strong>
     </div>,
-    <strong>compound verb</strong>,
+    <div className="py-3"><strong>Compound Verb</strong></div>,
 ]}/>
 
 Here are a few of examples:
@@ -178,15 +180,10 @@ Transitive stative compounds always use use the word <IW w={{ p: "کول", f: "k
 
 The <IW w={{ p: "کول", f: "kawul" }} /> verb used by these compounds will <em>never, ever, ever take a <IW w={{ p: "و", f: "óo" }} /> prefix</em>.
 
-<VerbInfo>{{
-    def: "کول - to make [object] ____",
-    subDef: "transitive",
-    presStem: { p: "____ کو", f: "____ kaw" },
-    subjStem: { p: "____ کړ", f: "____ kR" },
-    infinitive: { p: "____ کول", f: "____ kawúl" },
-    perfRoot: { p: "____ کړل", f: "____ kRul" },
-    pastPart: { p: "____ کړی", f: "____ kúRey" },
-}}</VerbInfo>
+<RootsAndStems
+    info={getVerbInfo({"i":10247,"ts":1579015359582,"p":"کول","f":"kawul","e":"to make ____ ____ (as in \"He's making me angry.\")","c":"v. trans. irreg. stat.","ssp":"کړ","ssf":"kR","prp":"کړل","prf":"kRul","pprtp":"کړی","pprtf":"kúRey","noOo":true})}
+    textOptions={defaultTextOptions}
+/>
 
 The complement is often an adjective, as in the following example: <IW w={{ p: "خفه کول", f: "khufa kawúl", e: "to upset" }} />
 
@@ -266,7 +263,7 @@ Let's take a look at the verb <IW w={{ p: "ستړی کول", f: "stúRey kawúl"
 
 <img src={makingTiredDiagram} className="image-fluid" />
 
-If we're using a feminine object <IW w={{ p: "هغه", f: "haghá", e: "her", a: "" }} />, we need to inflect the complement/adjective <IW w={{ p: "ستړی", f: "stúRe", e: "tired" }} /> to <IW w={{ p: "ستړې", f: "stúRe" }} />.
+If we're using a feminine object <IW w={{ p: "هغه", f: "haghá", e: "her", a: "" }} />, we need to inflect the complement/adjective <IW w={{ p: "ستړی", f: "stúRey", e: "tired" }} /> to <IW w={{ p: "ستړې", f: "stúRe" }} />.
 
 <details>
     <summary className="large-summary">See conjugations</summary>
@@ -452,7 +449,7 @@ For example if we use the irregular adjective <IW w={{ p: "پوخ", f: "pokh", e
     </tbody>
 </table>
 
-And when we combine this inflectable adjective with the helper verb they get fused togethre like this:
+And when we combine this inflectable adjective with the verb they get fused together like this:
 
 <SimpleFormula items={[
    <Word w={{ p: "پوخ", f: "pokh", e: "cooked" }} />,
@@ -625,7 +622,7 @@ So far we've learned the inner workings of one type of machine: the "transformer
 
 To review all the behaviours of the stative compounds, we know that they:
 
-- Always use <IW w={{ p: "کول", f: "kawul", e: "to make" }} /> as the helper/auxilary verb
+- Always use <IW w={{ p: "کول", f: "kawul", e: "to make" }} /> as the verb
 - The complement can be an adjective, noun, or adverb
 - If the complement is an adjective, it will inflect according to the object
 - Infinitive/imperfective forms (almost always) fuse together when the complement ends in a consonant
@@ -687,15 +684,10 @@ While stative componuds used <IW w={{ p: "کول", f: "kawul", e: "to make" }} /
 
 Unlike <IW w={{ p: "کول", f: "kawúl", e: "to make" }} />, <IW w={{ p: "کول", f: "kawúl", e: "to do" }} /> does take a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /> in the perfective forms.
 
-<VerbInfo>{{
-    def: "کول - to do [object]",
-    subDef: "transitive",
-    presStem: { p: "کو", f: "kaw" },
-    subjStem: { p: "وکړ", f: "óokR" },
-    infinitive: { p: "کول", f: "kawúl" },
-    perfRoot: { p: "وکړل", f: "óokRul" },
-    pastPart: { p: "کړی", f: "kúRey" },
-}}</VerbInfo>
+<RootsAndStems
+    info={getVerbInfo({"i":10246,"ts":1527812752,"p":"کول","f":"kawul","e":"to do (an action or activity)","c":"v. trans. irreg. dyn.","ssp":"وکړ","ssf":"óokR","prp":"وکړل","prf":"óokRul","pprtp":"کړی","pprtf":"kúRey","diacExcept":true})}
+    textOptions={defaultTextOptions}
+/>
 
 Let's look at the verb <IW w={{ p: "کار کول", f: "kaar kawul", e: "to work" }} />:
 
@@ -909,7 +901,7 @@ Remember all those weird different behaviours that we mentioned at the beginning
         </tr>
         <tr>
             <td>Uses <IW w={{ p: "کول", e: "to make" }} />, which never takes a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} /></td>
-            <td>Uses <IW w={{ p: "کول", e: "to do" }} />, which does take a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />, or other helper verbs</td>
+            <td>Uses <IW w={{ p: "کول", e: "to do" }} />, which does take a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />, or other verbs</td>
         </tr>
         <tr>
             <td>The complement can be an adjective, noun, or adverb</td>
@@ -1090,15 +1082,10 @@ These follow all the same rules and behaviours as the transitive versions, excep
 
 These verbs use the intranisite equivalent to <IW w={{ p: "کول", f: "kawúl", e: "to make" }} /> which is <IW w={{ p: "کېدل", f: "kedúl", e: "to become" }} />.
 
-<VerbInfo>{{
-    def: "کېدل - to become ____",
-    subDef: "intransitive",
-    presStem: { p: "کېږ", f: "keG" },
-    subjStem: { p: "ش", f: "sh" },
-    infinitive: { p: "کېدل", f: "kedúl" },
-    perfRoot: { p: "شول", f: "shwul" },
-    pastPart: { p: "شوی", f: "shúwey" },
-}}</VerbInfo>
+<RootsAndStems
+    info={getVerbInfo({"i":10313,"ts":1581086654898,"p":"کېدل","f":"kedul","e":"to become _____","c":"v. intrans. irreg. stat.","ssp":"ش","ssf":"sh","prp":"شول","prf":"shwul","pprtp":"شوی","pprtf":"shúwey","noOo":true})}
+    textOptions={defaultTextOptions}
+/>
 
 Notice how with this verb, just as with <IW w={{ p: "کول", f: "kawúl", e: "to make" }} />, there is no <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />.
 
@@ -1541,15 +1528,10 @@ If a dynamic compound is made with <IW w={{ p: "کول", f: "kawul", e: "to do" 
 
 The verb used is <IW w={{ p: "کېدل", f: "kedúl", e: "to happen", a: "" }} />, which is the intransitive equivalent of <IW w={{ p: "کول", f: "kawul", e: "to do" }} />. It *does* ake a <IW w={{ p: "و", f: "óo", e: "perfective prefix" }} />
 
-<VerbInfo>{{
-    def: "کېدل - to happen",
-    subDef: "intransitive",
-    presStem: { p: "کېږ", f: "keG" },
-    subjStem: { p: "وش", f: "óosh" },
-    infinitive: { p: "کېدل", f: "kedúl" },
-    perfRoot: { p: "وشول", f: "óoshwul" },
-    pastPart: { p: "شوی", f: "shúwey" },
-}}</VerbInfo>
+<RootsAndStems
+    info={getVerbInfo({"i":10312,"ts":1527812754,"p":"کېدل","f":"kedul","e":"to happen, occur","c":"v. intrans. irreg. dyn.","ssp":"وش","ssf":"óosh","prp":"وشول","prf":"óoshwul","pprtp":"شوی","pprtf":"shúwey","diacExcept":true})}
+    textOptions={defaultTextOptions}
+/>
 
 <details>
     <summary className="large-summary">See conjugations</summary>
