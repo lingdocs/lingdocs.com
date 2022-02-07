@@ -19,6 +19,11 @@ const projects = [
         description: "A Pashto dicitionary with smart-search and inflection/conjugation",
         link: "https://dictionary.lingdocs.com",
     },
+    {
+        title: "Pashtoodle",
+        description: "A Pashto version of the well-loved word guessing game",
+        link: "https://pashtoodle.lingdocs.com",
+    },
 ];
 
 const About = ({ location }) => {
