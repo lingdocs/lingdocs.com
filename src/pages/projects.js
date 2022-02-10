@@ -27,7 +27,7 @@ const projects = [
     {
         title: "RTL EPUB Maker",
         description: "Easily create EPUB e-book files with proper RTL support. Because right-to-left languages deserve nice e-books too.",
-        link: "https//rtl-epub-maker.lingdocs.com",
+        link: "https://rtl-epub-maker.lingdocs.com",
     },
 ];
 
