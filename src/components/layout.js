@@ -35,6 +35,12 @@ const Layout = ({ location, title, children }) => {
           <Nav className="ml-auto">
             <ul className="navbar-nav">
               <li className="nav-item">
+                <Link to="https://www.youtube.com/channel/UC1-yjDec5VDtia5s1gcMw4A" className="nav-link">YouTube</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="https://www.twitter.com/@lingdocs" className="nav-link">Twitter</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/projects" className="nav-link">Projects</Link>
               </li>
               <li className="nav-item">

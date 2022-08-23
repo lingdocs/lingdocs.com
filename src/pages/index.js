@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import homeBackground from "../assets/images/home-bg.jpg";
+import HeadingLinks from "../components/HeadingLinks";
 
 const BlogIndex = ({ data, location }) => {
   const { title, siteUrl, tagline } = data.site.siteMetadata;
@@ -23,6 +24,7 @@ const BlogIndex = ({ data, location }) => {
               <div className="site-heading">
                 <h1>{title}</h1>
                 <span className="subheading">{tagline}</span>
+                <HeadingLinks />
               </div>
             </div>
           </div>

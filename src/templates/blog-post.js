@@ -5,14 +5,14 @@ import {
 } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { DiscussionEmbed } from 'disqus-react';
-// import Commento from "../components/commento";
+import HeadingLinks from "../components/HeadingLinks";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.mdx;
-  const { siteTitle, siteUrl, commentoUrl } = data.site.siteMetadata;
+  const { siteTitle, siteUrl } = data.site.siteMetadata;
   // const { previous, next } = pageContext;
   const mainImage = `${siteUrl}${post.frontmatter.image.publicURL}`;
   return (
@@ -31,6 +31,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <h1>{post.frontmatter.title}</h1>
                 <h2 className="subheading">{post.frontmatter.description}</h2>
                 <span className="meta">{post.frontmatter.date}</span>
+                <HeadingLinks />
               </div>
             </div>
           </div>

@@ -10,6 +10,19 @@ body {
   /* font-family: 'Lora', 'Times New Roman', serif; */
 }
 
+.heading-button {
+  display: block;
+  padding: "3rem";
+  border: "10px solid red";
+}
+
+.plain-link {
+  color: inherit;
+}
+.plain-link:hover {
+  color: inherit;
+}
+
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -196,7 +209,7 @@ header.masthead .overlay {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 150px 0 150px;
   color: white;
 }
 
@@ -204,7 +217,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 150px 0;
   }
 }
 

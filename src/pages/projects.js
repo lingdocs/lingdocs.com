@@ -5,11 +5,6 @@ import aboutBackground from "../assets/images/about-bg.jpg";
 
 const projects = [
     {
-        title: "Pashto Verb Explorer",
-        description: "An interactive playground for exploring and learning about how Pashto verbs are conjugated. This is based on a verb conjugation engine that runs in the browser.",
-        link: "https://verbs.lingdocs.com",
-    },
-    {
         title: "Pashto Grammar",
         description: "A Pashto grammar reference. This is extremely new and only in the very beginning stages.",
         link: "https://grammar.lingdocs.com",
@@ -18,6 +13,11 @@ const projects = [
         title: "Pashto Dictionary",
         description: "A Pashto dicitionary with smart-search and inflection/conjugation",
         link: "https://dictionary.lingdocs.com",
+    },
+    {
+      title: "Pashto Verb Explorer",
+      description: "An interactive playground for exploring and learning about how Pashto verbs are conjugated. This is based on a verb conjugation engine that runs in the browser.",
+      link: "https://verbs.lingdocs.com",
     },
     {
         title: "Dari Dictionary",
