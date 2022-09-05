@@ -38,6 +38,9 @@ const Layout = ({ location, title, children }) => {
                 <Link to="https://www.youtube.com/channel/UC1-yjDec5VDtia5s1gcMw4A" className="nav-link">YouTube</Link>
               </li>
               <li className="nav-item">
+                <Link to="https://www.reddit.com/r/lingdocs" className="nav-link">Reddit</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="https://www.twitter.com/@lingdocs" className="nav-link">Twitter</Link>
               </li>
               <li className="nav-item">
@@ -65,6 +68,14 @@ const Layout = ({ location, title, children }) => {
                     <span className="fa-stack fa-lg">
                       <i className="fas fa-circle fa-stack-2x"></i>
                       <i className="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="https://www.reddit.com/r/lingdocs">
+                    <span className="fa-stack fa-lg">
+                      <i className="fas fa-circle fa-stack-2x"></i>
+                      <i className="fab fa-reddit fa-stack-1x fa-inverse"></i>
                     </span>
                   </a>
                 </li>
