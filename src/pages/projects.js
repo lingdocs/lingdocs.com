@@ -20,11 +20,6 @@ const projects = [
       link: "https://verbs.lingdocs.com",
     },
     {
-        title: "Dari Dictionary",
-        description: "A Dari dictionary in progress",
-        link: "https://dari-dictionary.lingdocs.com",
-    },
-    {
         title: "Pashtoodle",
         description: "A Pashto version of the well-loved word guessing game",
         link: "https://pashtoodle.lingdocs.com",
