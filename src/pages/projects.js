@@ -15,9 +15,9 @@ const projects = [
         link: "https://dictionary.lingdocs.com",
     },
     {
-      title: "Pashto Verb Explorer",
-      description: "An interactive playground for exploring and learning about how Pashto verbs are conjugated. This is based on a verb conjugation engine that runs in the browser.",
-      link: "https://verbs.lingdocs.com",
+      title: "Pashto Inflector",
+      description: "An open source TypeScript/React library for Pashto inflection, verb conjugation, phrase generation, text conversion, and more.",
+      link: "https://pashto-inflector.lingdocs.com",
     },
     {
         title: "Pashtoodle",
