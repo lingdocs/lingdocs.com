@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function({ w }) {
+function InlineWord({ w }) {
     return (
         <span>
             <span dir="rtl">{w.p}</span>
@@ -10,3 +10,5 @@ export default function({ w }) {
         </span>
     );
 };
+
+export default InlineWord;
