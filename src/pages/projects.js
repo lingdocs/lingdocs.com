@@ -10,8 +10,6 @@ const projects = [
       "A Pashto grammar reference with interactive examples and quizzes.",
     link: "https://grammar.lingdocs.com",
     repo: "https://github.com/lingdocs/pashto-grammar",
-    playStore:
-      "https://play.google.com/store/apps/details?id=com.lingdocs.pashto.grammar",
   },
   {
     title: "Pashto Dictionary",
