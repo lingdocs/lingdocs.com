@@ -36,7 +36,13 @@ const projects = [
     link: "https://rtl-epub-maker.lingdocs.com",
     repo: "https://github.com/lingdocs/rtl-epub-maker",
   },
-]
+  {
+    title: "Urdu Number Trainer",
+    description: "A Web-App for training Urdu numbers. Review the numbers and get quizzed on them randomly.",
+    link: "https://urdu-numbers.lingdocs.com/",
+    repo: "https://github.com/lingdocs/urdu-number-trainer",
+  },
+];
 
 const About = ({ location }) => {
   return (
